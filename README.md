@@ -4,7 +4,7 @@ Sysacad. Gestion de alumnos de la Universidad Tecnologica Nacional de Rosario
 
 ## Descripción 📋
 
-Por ahora es un rediseño de la pagina original que se ve bastante antigua. (Adjunto link pagina original: <a target="_blanck">https://www.alumnos.frro.utn.edu.ar/loginAlumno.asp?refrescar<a/>)
+Por ahora es un rediseño de la pagina original que se ve bastante antigua. (Adjunto link pagina original: <a target="_blank">https://www.alumnos.frro.utn.edu.ar/loginAlumno.asp?refrescar<a/>)
 
 Para un futuro mi idea es crear la funcionalidad del login, agregar rutas, rutas protegidas, poder crear un endpoint para hacer solicitudes a una base de datos y traer o subir datos.
 
