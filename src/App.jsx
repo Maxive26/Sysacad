@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <ChangeTheme />
-      <div className="flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+      <div className="flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
         <div className="img">
           <img
             src="./src/assets/descarga.png"
@@ -25,12 +25,16 @@ function App() {
           />
         </div>
         <div className="flex gap-3 pr-5 flex-col">
-          <label>Legajo</label>
-          <input className="p-1 rounded-lg bg-[#f9f9f9] border" type="text" />
-          <label>Contraseña</label>
+          <label className="dark:text-white">Legajo</label>
+          <input
+            className="p-1 rounded-lg bg-[#f9f9f9] border dark:bg-slate-700 dark:border-none dark:text-white"
+            type="text"
+            autoFocus
+          />
+          <label className="dark:text-white">Contraseña</label>
           <label className="relative items-center">
             <input
-              className="p-1 pr-7  bg-[#f9f9f9] border rounded-lg"
+              className="p-1 pr-7  bg-[#f9f9f9] border rounded-lg dark:bg-slate-700 dark:border-none dark:text-white"
               type={check}
             />
             <input
@@ -41,7 +45,9 @@ function App() {
               id=""
             />
           </label>
-          <button className="bg-sky-600 text-white">Ingresar</button>
+          <button className="bg-sky-600 text-white dark:bg-slate-700 dark:hover:bg-slate-500">
+            Ingresar
+          </button>
         </div>
       </div>
     </>
