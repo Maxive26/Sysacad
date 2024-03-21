@@ -17,9 +17,11 @@ function App() {
 
   return (
     <>
-      <Title className="relative" />
-      <ChangeTheme className="relative" />
-      <main className="m-0 flex place-items-center justify-center min-w-80 h-screen">
+      <header className="absolute w-full">
+        <Title />
+        <ChangeTheme />
+      </header>
+      <main className="m-0 flex place-items-center justify-center h-screen">
         <div className="bg-white flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
           <div className="img">
             <img
