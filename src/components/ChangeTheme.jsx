@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Moon } from "./svg/Moon.jsx";
+import { Sun } from "./svg/Sun.jsx";
 
 export const ChangeTheme = () => {
   const [theme, setTheme] = useState(() => {
@@ -7,6 +9,7 @@ export const ChangeTheme = () => {
     }
     return "light";
   });
+  const [viewTheme, setViewTheme] = useState(true);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -18,14 +21,15 @@ export const ChangeTheme = () => {
 
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setViewTheme(!viewTheme);
   };
 
   return (
     <button
       onClick={handleChangeTheme}
-      className="bg-sky-600 text-white dark:bg-slate-700 dark:hover:bg-slate-500"
+      className="bg-gray-200 rounded-full text-white p-3 dark:bg-gray-700 dark:fill-white dark:hover:bg-slate-500"
     >
-      Cambiar tema
+      {viewTheme ? <Moon /> : <Sun />}
     </button>
   );
 };
