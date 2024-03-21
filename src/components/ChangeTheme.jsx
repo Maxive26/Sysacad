@@ -27,7 +27,7 @@ export const ChangeTheme = () => {
   return (
     <button
       onClick={handleChangeTheme}
-      className="bg-gray-200 rounded-full text-white p-3 dark:bg-gray-700 dark:fill-white dark:hover:bg-slate-500"
+      className="bg-gray-200 hover:bg-gray-300 rounded-full text-white p-3 dark:bg-gray-700 dark:fill-white dark:hover:bg-slate-500"
     >
       {viewTheme ? <Moon /> : <Sun />}
     </button>
