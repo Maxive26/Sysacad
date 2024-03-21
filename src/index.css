@@ -38,13 +38,13 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   cursor: pointer;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

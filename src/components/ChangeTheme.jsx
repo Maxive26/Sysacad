@@ -25,7 +25,7 @@ export const ChangeTheme = () => {
       onClick={handleChangeTheme}
       className="bg-sky-600 text-white dark:bg-slate-700 dark:hover:bg-slate-500"
     >
-      Change Theme
+      Cambiar tema
     </button>
   );
 };

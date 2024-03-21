@@ -45,7 +45,7 @@ function App() {
               id=""
             />
           </label>
-          <button className="bg-sky-600 text-white dark:bg-slate-700 dark:hover:bg-slate-500">
+          <button className="bg-sky-600 text-white rounded-lg p-2 font-medium cursor-pointer text-lg dark:bg-slate-700 dark:hover:bg-slate-500">
             Ingresar
           </button>
         </div>
