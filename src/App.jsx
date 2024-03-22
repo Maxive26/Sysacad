@@ -17,27 +17,42 @@ function App() {
 
   return (
     <>
-      <header className="absolute w-full">
+      <header className="bg-white absolute w-full dark:bg-slate-900">
         <Title />
         <ChangeTheme />
+        <a
+          href="https://www.frro.utn.edu.ar/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./src/assets/descarga.png"
+            alt=""
+            className="absolute max-w-28 top-10 left-10"
+          />
+        </a>
       </header>
       <main className="m-0 flex place-items-center justify-center h-screen">
         <div className="bg-white flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
-          <div className="img">
+          {/* <div className="img">
             <img
               src="./src/assets/descarga.png"
               alt="Logo de la Universidad Tecnologica Nacional"
               className="w-[150px] m-4"
             />
-          </div>
-          <div className="flex gap-3 pr-5 flex-col">
-            <label className="text-black dark:text-white">Legajo</label>
+          </div> */}
+          <div className="flex gap-3 flex-col px-10">
+            <label className="text-black font-bold dark:text-white">
+              Legajo
+            </label>
             <input
               className="text-black p-1 rounded-lg bg-[#f9f9f9] border-2 border-black dark:bg-slate-700 dark:border-gray-500 dark:text-white"
               type="text"
               autoFocus
             />
-            <label className="text-black dark:text-white">Contraseña</label>
+            <label className="text-black font-bold dark:text-white">
+              Contraseña
+            </label>
             <label className="text-black relative items-center">
               <input
                 className="border-2 border-black p-1 pr-7  bg-[#f9f9f9] rounded-lg dark:bg-slate-700 dark:border-gray-500 dark:text-white"

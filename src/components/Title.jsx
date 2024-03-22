@@ -9,7 +9,7 @@ export const Title = () => {
       <h2 className="text-4xl font-bold dark:text-white">
         Facultad regional Rosario
       </h2>
-      <p className="mt-10 text-xl dark:text-white">
+      <p className="mt-10 mb-6 text-xl dark:text-white">
         Sistema de autogestión de alumnos
       </p>
     </div>
