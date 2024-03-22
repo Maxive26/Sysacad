@@ -14,8 +14,14 @@ Insignias que muestran metadatos como el estado de la compilación, la cobertura
 
 ## Visuales 🚀
 
+v1.0
 ![alt text](src/assets/image.png)
 
+v2.0
+![alt text](src/assets/newpic.png)
+
+v2.0 Dark Mode
+![alt text](src/assets/dark.png)
 
 ## Instalación 🔧
 
