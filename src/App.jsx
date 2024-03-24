@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <header className="bg-white absolute w-full dark:bg-slate-900">
+      <header className="bg-[#FFFFF0] absolute w-full dark:bg-slate-900">
         <Title />
         <ChangeTheme />
         <a
@@ -33,7 +33,7 @@ function App() {
         </a>
       </header>
       <main className="m-0 flex place-items-center justify-center h-screen">
-        <div className="bg-white flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
+        <div className="bg-[#FFFFF0] flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
           {/* <div className="img">
             <img
               src="./src/assets/descarga.png"
@@ -46,7 +46,7 @@ function App() {
               Legajo
             </label>
             <input
-              className="text-black p-1 rounded-lg bg-[#f9f9f9] border-2 border-black dark:bg-slate-700 dark:border-gray-500 dark:text-white"
+              className="text-black p-1 rounded-lg bg-[#FFFFF0] border-2 border-black focus:outline-none focus:border-sky-600 dark:bg-slate-700 dark:border-gray-500 dark:text-white"
               type="text"
               autoFocus
             />
@@ -55,7 +55,7 @@ function App() {
             </label>
             <label className="text-black relative items-center">
               <input
-                className="border-2 border-black p-1 pr-7  bg-[#f9f9f9] rounded-lg dark:bg-slate-700 dark:border-gray-500 dark:text-white"
+                className="border-2 border-black p-1 pr-7  bg-[#FFFFF0] rounded-lg focus:outline-none focus:border-sky-600 dark:bg-slate-700 dark:border-gray-500 dark:text-white"
                 type={check}
               />
               <input
@@ -66,7 +66,7 @@ function App() {
                 id=""
               />
             </label>
-            <button className="bg-sky-600 text-white rounded-lg p-2 font-medium cursor-pointer text-lg dark:bg-slate-700 dark:hover:bg-slate-500">
+            <button className="bg-sky-600 hover:bg-sky-500 text-white rounded-lg p-2 font-medium cursor-pointer text-lg dark:bg-slate-700 dark:hover:bg-slate-500">
               Ingresar
             </button>
           </div>
