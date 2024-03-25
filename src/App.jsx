@@ -3,15 +3,20 @@ import "./App.css";
 import { useState } from "react";
 import { ChangeTheme } from "./components/ChangeTheme";
 import { Title } from "./components/Title";
+import { Eye } from "./components/svg/Eye.jsx";
+import { NotEye } from "./components/svg/NotEye.jsx";
 
 function App() {
   const [check, setCheck] = useState("password");
+  const [viewPassword, setViewPassword] = useState();
 
   const handleCheck = () => {
     if (check == "password") {
       setCheck("text");
+      setViewPassword(true);
     } else {
       setCheck("password");
+      setViewPassword(false);
     }
   };
 
@@ -61,13 +66,12 @@ function App() {
                 className="ease-out duration-100 border-2 border-black p-1 pr-7  bg-[#FFFFF0] rounded-lg focus:outline-none focus:border-sky-600 dark:bg-slate-700 dark:border-gray-500 dark:text-white"
                 type={check}
               />
-              <input
-                className="absolute w-5 h-5 top-[20%] right-2 cursor-pointer pr-7"
-                type="checkbox"
-                onChange={handleCheck}
-                name=""
-                id=""
-              />
+              <button
+                className="absolute border-l-2 border-black dark:border-white w-3 h-6 top-[17%] right-2 cursor-pointer pl-3 pr-7"
+                onClick={handleCheck}
+              >
+                {viewPassword ? <NotEye /> : <Eye />}
+              </button>
             </label>
             <button
               onClick={send}
