@@ -15,6 +15,10 @@ function App() {
     }
   };
 
+  const send = () => {
+    alert("[!] Proximamente...");
+  };
+
   return (
     <>
       <header className="bg-[#FFFFF0] absolute w-full dark:bg-slate-900">
@@ -28,19 +32,18 @@ function App() {
           <img
             src="./src/assets/descarga.png"
             alt=""
-            className="absolute max-w-28 top-10 left-10"
+            className="absolute lg:max-w-28 lg:block md:block md:max-w-20 max-w-16 top-3 left-3 lg:top-10 lg:left-10"
           />
         </a>
       </header>
-      <main className="m-0 flex place-items-center justify-center h-screen">
-        <div className="bg-[#FFFFF0] flex items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
-          {/* <div className="img">
-            <img
-              src="./src/assets/descarga.png"
-              alt="Logo de la Universidad Tecnologica Nacional"
-              className="w-[150px] m-4"
-            />
-          </div> */}
+      <main className="m-0 flex flex-col place-items-center justify-center  h-screen">
+        <h4 className="text-xl pb-2 font-bold sm:hidden dark:text-white ">
+          UTN FRRO
+        </h4>
+        <h4 className="text-lg pb-2 font-bold sm:hidden dark:text-white">
+          Sistema de autogestion de alumnos
+        </h4>
+        <div className="bg-[#FFFFF0] flex flex-col items-center rounded-3xl p-5 gap-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  dark:bg-slate-900">
           <div className="flex gap-3 flex-col px-10">
             <label className="text-black font-bold dark:text-white">
               Legajo
@@ -66,7 +69,10 @@ function App() {
                 id=""
               />
             </label>
-            <button className="bg-sky-600 hover:bg-sky-500 text-white rounded-lg p-2 font-medium cursor-pointer text-lg dark:bg-slate-700 dark:hover:bg-slate-500">
+            <button
+              onClick={send}
+              className="bg-sky-600 hover:bg-sky-500 text-white rounded-lg p-2 font-medium cursor-pointer text-lg dark:bg-slate-700 dark:hover:bg-slate-500"
+            >
               Ingresar
             </button>
           </div>
