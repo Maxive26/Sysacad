@@ -27,7 +27,8 @@ export const ChangeTheme = () => {
   return (
     <button
       onClick={handleChangeTheme}
-      className="bg-gray-200 rounded-full text-white p-3 dark:bg-gray-700 dark:fill-white dark:hover:bg-slate-500"
+      //Aca realizar posicionamiento del boton
+      className="absolute top-5 right-5 bg-gray-300 hover:bg-gray-400 rounded-full text-white p-3 dark:bg-gray-700 dark:fill-white dark:hover:bg-slate-500"
     >
       {viewTheme ? <Moon /> : <Sun />}
     </button>

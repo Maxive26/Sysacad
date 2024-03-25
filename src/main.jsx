@@ -5,6 +5,8 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <div className="flex justify-center min-w-80">
+      <App />
+    </div>
   </React.StrictMode>
 );
