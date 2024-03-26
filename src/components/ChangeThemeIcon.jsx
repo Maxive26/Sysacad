@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Moon } from "./svg/Moon.jsx";
 import { Sun } from "./svg/Sun.jsx";
 
-export const ChangeTheme = () => {
+export const ChangeThemeIcon = () => {
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
