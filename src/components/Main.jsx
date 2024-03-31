@@ -20,7 +20,6 @@ export const Main = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user);
   };
 
   const handleChange = (e) => {

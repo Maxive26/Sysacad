@@ -1,27 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { Moon } from "./svg/Moon.jsx";
 import { Sun } from "./svg/Sun.jsx";
+import useLocalStorage from "../hooks/useLocalStorage.js";
 
 export const ChangeThemeIcon = () => {
-  const [theme, setTheme] = useState(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  });
-  const [viewTheme, setViewTheme] = useState(true);
+  const [theme, setTheme] = useLocalStorage("theme", "light");
+  const [viewTheme, setViewTheme] = useState(false);
 
   useEffect(() => {
+    //Validar localStorage no el theme
     if (theme === "dark") {
       document.querySelector("html").classList.add("dark");
+      setViewTheme(false);
     } else {
       document.querySelector("html").classList.remove("dark");
+      setViewTheme(true);
     }
   }, [theme]);
 
   const handleChangeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    setViewTheme(!viewTheme);
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
   };
 
   return (
