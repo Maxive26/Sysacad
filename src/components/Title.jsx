@@ -1,10 +1,8 @@
-import React from "react";
-
 export const Title = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <h1 className="ease-out duration-100 p-5 hidden lg:block lg:text-5xl md:block sm:block font-bold md:text-2xl dark:text-white">
-        Universidad tecnológica Nacional
+        Universidad tecnológica Nacional.
       </h1>
       <h2 className="ease-out duration-100 hidden lg:block lg:text-4xl md:block md:text-xl sm:block font-bold dark:text-white">
         Facultad regional Rosario
